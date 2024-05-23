@@ -12,7 +12,7 @@ document.getElementById('enviarButton').addEventListener('click',async ()=>{
         nome: nomeCampo.value,
         email: emailCampo.value,
         foto: fotoCampo.value,
-        telefone: telefoneCampo.value,
+        celular: telefoneCampo.value,
         endereco: enderecoCampo.value
     }
     console.log(dados);

@@ -1,20 +1,20 @@
-const link = 'https://bakcend-fecaf-render.onrender.com' // https://bakcend-fecaf-render.onrender.com/contatos
+const link = 'http://localhost:8080/contatos' // https://bakcend-fecaf-render.onrender.com/contatos
 export async function getContatos(){
-    const url = link+"/contatos"
+    const url = link
     const response = await fetch(url)
     const data = await response.json()
     return data
 }
 
 export async function getContato(id){
-    const url = link+"/contatos/"+id
+    const url = link+"/"+id
     const response = await fetch(url)
     const data = await response.json()
     return data
 }
 
 export async function postContato(dados) {
-    const url = `${link}/contatos`;
+    const url = `${link}`;
     const options = {
       method: 'POST',
       headers: {
@@ -33,7 +33,7 @@ export async function postContato(dados) {
 }
 
 export async function deleteContato(id){
-    const url = `${link}/contatos/${id}`;
+    const url = `${link}/${id}`;
 
     const options = {
       method: 'DELETE'
@@ -53,7 +53,7 @@ export async function deleteContato(id){
   }
 
   export async function updateContato(id, dados) {
-    const url = `${link}/contatos/${id}`
+    const url = `${link}/${id}`
     const options = {
       method: 'PUT', 
       headers: {

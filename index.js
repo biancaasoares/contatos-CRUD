@@ -1,8 +1,5 @@
-import {getContatos, getContato, deleteContato, updateContato} from "./funcoes.js"
+import {getContatos, deleteContato} from "./funcoes.js"
 const listaContatos = await getContatos()
-
-// console.log(listaContatos);
-// console.log(await getContato(2));
 
 function criarCardContato(info){
     const container = document.getElementById('container')
@@ -38,6 +35,9 @@ function criarCardContato(info){
             alert('Ocorreu um erro!')
         }
         
+    })
+    botaoEditar.addEventListener('click',()=>{
+        window.location.href='./edit.html?idContato='+info.id
     })
 }
 
