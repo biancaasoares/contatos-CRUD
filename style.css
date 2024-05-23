@@ -21,3 +21,17 @@
     height: 60%;
     cursor: pointer;
 }
+
+body a{
+    display: flex;
+    align-items: center;
+    background-color: #276E96;
+    padding: 30px;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
