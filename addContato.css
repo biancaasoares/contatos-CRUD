@@ -1,0 +1,14 @@
+addContato.css
+#contato-form {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #276E96; 
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+#contato-form input,
+#contato-form button {
+    margin-bottom: 10px;
+}

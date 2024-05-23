@@ -1,0 +1,23 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#container>div{
+    font-size: 32px;
+    background-color: #276E96;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+}
+#container>div>div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#container>div>div>img{
+    height: 60%;
+    cursor: pointer;
+}
